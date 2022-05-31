@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-pt">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="sty/stylogin.css">
+    <script src="scr/login.js"></script>
+    <title>Entrar</title>
+</head>
+<body>
+    <div class="container">
+        <aside class="left">
+            <h1>
+                WebSchool
+            </h1>
+            <p>
+                Manténha-se a par de todas as notícias sobre a sua escola e interaja com seus colegas e professores.
+            </p>
+            <div class="recent">
+                <h1 id="recent-title">Contas recentes</h1>
+                <img src="img/undraw_reading_time_re_phf7.svg" alt="undraw" id="undraw">
+                <div class="img-field">
+                    <figure class="recent-field recent-field-l">
+                            <img src="img/luntala.jpg" alt="luntala maria">
+                        <figcaption>
+                            <p>
+                                Luntala Maria
+                            </p>
+                        </figcaption>
+                    </figure>
+                    <figure class="recent-field recent-field-c">
+                            <img src="img/yole.jpg" alt="Carla Sole">
+                        <figcaption>
+                            <p>
+                                Carla Sole
+                            </p>
+                        </figcaption>
+                    </figure>
+                </div>
+            </div>
+            <footer>
+                &copy; Mafuala Corporation 2022
+            </footer>
+        </aside>
+        <section class="right">
+            <h1>
+                Login
+                <div class="line"></div>
+            </h1>
+            <form action="#" method="post">
+                <div class="input-field">
+                    <div class="input-file input-file-name">
+                        <label for="name">Nome</label>
+                        <input type="text" name="name" id="name" placeholder="Nome completo" required>
+                    </div>
+                    <div class="input-file input-file-password">
+                        <label for="pass">Senha</label>
+                        <input type="password" name="pass" id="pass" placeholder="Senha do Usuário" required minlength="8" maxlength="12"><span class="show" onclick="show()">Mostrar</span><span class="hide" onclick="hide()" style="display: none;">Ocultar</span>
+                    </div>
+                </div>
+                <div class="in">
+                    <button><a href="#" class="button">Entrar</a></button>
+                    <button><a href="pag/cadastro.html" class="create">Criar conta</a></button>
+                </div>
+                <footer id="footer-phone">
+                    &copy; Mafuala Corporation 2022
+                </footer>
+            </form>
+        </section>
+    </div>
+</body>
+</html>

@@ -1,0 +1,258 @@
+/*General Settings*/
+
+* {
+    font: normal 12pt Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    border: none;
+    outline: none;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+}
+
+/*left side*/
+
+.container {
+    position: relative;
+    display: flex;
+    height: 100%;
+}
+
+.left {
+    margin-right: 2em;
+    background-color: #13d644ea;
+    color: #e6e4e4;
+    box-shadow: 0px 5px 8px #00000060;
+}
+
+.left h1 {
+    font: bold 1.5em Arial, sans-serif;
+    margin-bottom: 1em;
+    margin-top: 0.5em;
+
+}
+
+.left p{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+}
+
+.recent {
+    position: relative;
+    margin: 6em auto;
+}
+
+.left .recent #undraw {
+    width: 300px;
+    position: absolute;
+    top: 12.7pc;
+    /*left: 15px;*/
+    right: 0;
+    z-index: 1;
+}
+
+#recent-title {
+    font: bold 1.1em Arial, sans-serif;
+    margin-bottom: 2em;
+    text-align: center;
+}
+
+.img-field {
+    display: flex;
+    margin: 1em 15em;
+    cursor: pointer;
+}
+
+.img-field img {
+    width: 6em;
+    height: 6em;
+    margin: 0 1em;
+    border-radius: 80px;
+    border: 3px solid #ffffff;
+}
+
+.img-field figure figcaption p{
+    font-size: 14px;
+    text-align: center;
+}
+
+footer {
+    position: absolute;
+    bottom: 0;
+    margin-bottom: 10px;
+    margin-left: 15px;
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+}
+
+
+/*Right side*/
+
+.right {
+    margin: auto 25px;
+    padding: 10px;
+    box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.377);
+}
+
+.right h1{
+    color: #2F2E41;
+    position: relative;
+    font: bold 1.5em 'courier', courier, monospace;
+}
+
+.line {
+    position: absolute;
+    background-color: #13d644ea;
+    border-radius: 100px;
+    padding: 2px;
+    width: 1.8em;
+    top: 23px;
+}
+
+.right form {
+    margin-top: 15px;
+}
+
+.input-field .input-file {
+    transition: all .5s ease-in-out;
+    margin-bottom: 2em;
+    border-bottom: 2px solid #2F2E41;
+}
+
+.input-field .input-file:hover  {
+    border-bottom: 2px solid #13d644ea;
+}
+
+.input-field label {
+    font-size: 0.8em;
+
+}
+
+.input-field input {
+    background: transparent;
+    font-size: 0.9em;
+    margin-top: 8px;
+    padding-bottom: 10px;
+}
+
+.input-field input::placeholder {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #2F2E41;
+}
+
+form .input-field .input-file-password {
+    position: relative;
+}
+
+form .input-field .input-file-password span {
+    border-left: 1.9px solid #2f2e4148;
+    cursor: pointer;
+    color: #323144;
+    font-weight: 500;
+    font-size: 0.9em;
+    position: absolute;
+    padding-left: 5px;
+    top: 1.8em;
+    right: 0;
+}
+
+.input-field .input-file-name {
+    margin-top: 1.5em;
+}
+
+.right form .in {
+    display: flex;
+    flex-direction: column;
+}
+
+.right form .in button {
+    background: #2F2E41;
+    padding: 10px;
+    width: 100%;
+    border-radius: 5px;
+    margin: 5px auto;
+    transition: all .5s ease-in-out;
+    cursor: pointer;
+}
+
+.right form .in button:hover {
+    background: #13d644ea;
+}
+
+.right form .in button a {
+    color: #ffffff;
+    text-align: center;
+    text-decoration: none;
+}
+
+#footer-phone {
+    display: none;
+}
+
+/*Celular*/
+
+@media screen and (max-width: 520px) {
+
+    body {
+        background-color: #05d639be;
+    }
+
+    .left {
+        display: none;
+    }
+
+    .right {
+       
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin: auto;
+        width: 100%;
+        height: 100%;
+    }
+
+    .right h1 {
+        margin-top: 1.5em;
+        text-align: center;
+        width: 100%;
+    }
+
+    .right .line {
+        display: none;
+    } 
+
+    .input-field .input-file {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .input-field .input-file:last-child {
+        margin-bottom: 2em;
+    }
+
+    .input-field .input-file:hover {
+        border-bottom: 2px solid #2F2E41;
+    }
+
+   .right form .in button {
+       overflow: hidden;
+        margin-top: 1em;
+    }
+
+    .right form .in button:hover {
+        background: #2F2E41;
+    }
+
+   .right #footer-phone {
+       overflow: hidden;
+        display: none;
+        color: #2F2E41;
+        width: 50%;
+        text-align: center;
+    }
+
+}
