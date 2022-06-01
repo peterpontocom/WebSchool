@@ -19,29 +19,40 @@
             </p>
             <div class="recent">
                 <h1 id="recent-title">Contas recentes</h1>
-                <img src="img/undraw_reading_time_re_phf7.svg" alt="undraw" id="undraw">
                 <div class="img-field">
                     <figure class="recent-field recent-field-l">
-                            <img src="img/luntala.jpg" alt="luntala maria">
+                            <img src="img/2089793.png" alt="" id="pontinhos" class="pontos" onclick="showUpRemove()">
+                            <a href=""><img src="img/luntala.jpg" alt="luntala maria"></a>
+                            <span id="remove">Remove</span>
                         <figcaption>
-                            <p>
-                                Luntala Maria
-                            </p>
+                            <a href="">
+                                <p>
+                                    Luntala Maria
+                                </p>
+                            </a>
                         </figcaption>
                     </figure>
                     <figure class="recent-field recent-field-c">
-                            <img src="img/yole.jpg" alt="Carla Sole">
-                        <figcaption>
+                        <img src="img/2089793.png" alt="" id="pontinhos" class="pontos" onclick="showUpRemove()">
+                        <a href=""><img src="img/yole.jpg" alt="Carla Sole"></a>
+                    <figcaption>
+                        <a href="">
                             <p>
                                 Carla Sole
                             </p>
-                        </figcaption>
-                    </figure>
+                        </a>
+                    </figcaption>
+                </figure>
                 </div>
             </div>
-            <footer>
-                &copy; Mafuala Corporation 2022
-            </footer>
+            <div class="footer">
+                <div class="rodape">
+                    <footer>
+                        &copy; Mafuala Corporation 2022
+                    </footer>
+                    <img src="img/undraw_social_interaction_re_dyjh.svg" alt="undraw" id="undraw">
+                </div>
+            </div>
         </aside>
         <section class="right">
             <h1>
@@ -51,12 +62,14 @@
             <form action="#" method="post">
                 <div class="input-field">
                     <div class="input-file input-file-name">
-                        <label for="name">Nome</label>
-                        <input type="text" name="name" id="name" placeholder="Nome completo" required>
+                        <div class="flex-name">
+                            <label for="name">Nome</label>
+                            <input type="text" name="name" id="name" placeholder="Nome completo" oninput="bordaN()" onmouseout="bordaRedN()" required>
+                        </div>
                     </div>
-                    <div class="input-file input-file-password">
+                    <div class="input-file input-file2 input-file-password">
                         <label for="pass">Senha</label>
-                        <input type="password" name="pass" id="pass" placeholder="Senha do Usuário" required minlength="8" maxlength="12"><span class="show" onclick="show()">Mostrar</span><span class="hide" onclick="hide()" style="display: none;">Ocultar</span>
+                        <div class="flex-password"><input type="password" name="pass" id="pass" placeholder="Senha do Usuário" oninput="bordaP()" required minlength="8" maxlength="12"><span class="show" onclick="show()">Mostrar</span><span class="hide" onclick="hide()" style="display: none;">Ocultar</span></div>
                     </div>
                 </div>
                 <div class="in">

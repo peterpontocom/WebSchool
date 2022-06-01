@@ -14,15 +14,21 @@ body {
     height: 100vh;
 }
 
-/*left side*/
-
 .container {
     position: relative;
     display: flex;
     height: 100%;
+    width: 100%;
 }
 
+
+
+/*left side*/
+
 .left {
+    position: relative;
+    padding: 10px;
+    width: 60%;
     margin-right: 2em;
     background-color: #13d644ea;
     color: #e6e4e4;
@@ -41,18 +47,20 @@ body {
     text-align: center;
 }
 
+.left a {
+    text-decoration: none;
+    color: #fff;
+}
+
 .recent {
     position: relative;
     margin: 6em auto;
 }
 
 .left .recent #undraw {
-    width: 300px;
     position: absolute;
-    top: 12.7pc;
-    /*left: 15px;*/
+    bottom: 0;
     right: 0;
-    z-index: 1;
 }
 
 #recent-title {
@@ -63,16 +71,56 @@ body {
 
 .img-field {
     display: flex;
-    margin: 1em 15em;
+}
+
+.img-field figure {
+    padding: 10px;
+    border-radius: 5px;
+    margin: auto;
+    position: relative;
+    z-index: 2;
+    transition: all .3s ease-in-out;
     cursor: pointer;
+}
+
+.img-field figure:hover {
+    background: rgba(255, 255, 255, 0.171);
+
+}
+
+.img-field figure:hover #pontinhos {
+    opacity: 1;
+}
+
+#pontinhos {
+    transition: all .3s ease-in-out;
+    opacity: 0;
+    padding: 3px;
+    border-radius: none;
+    border: none;
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+#remove {
+    transition: all 1s ease-in-out;
+    display: none;
+    position: absolute;
+    background-color: #2F2E41;
+    padding: 5px;
+    border-radius: 5px;
+    top: 0;
+    right: 0;
 }
 
 .img-field img {
     width: 6em;
     height: 6em;
-    margin: 0 1em;
     border-radius: 80px;
-    border: 3px solid #ffffff;
+    border: 3px solid #383b63;
 }
 
 .img-field figure figcaption p{
@@ -90,10 +138,35 @@ footer {
 }
 
 
+.left .rodape #undraw {
+    width: 300px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    z-index: 1;
+}
+
+.rodape {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    padding: 5px;
+    background-position: center;
+    background-size: cover;
+}
+
+.footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
 /*Right side*/
 
 .right {
-    margin: auto 25px;
+    width: 35%;
+    margin: auto;
+    margin-right: 25px;
     padding: 10px;
     box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.377);
 }
@@ -122,10 +195,14 @@ footer {
     margin-bottom: 2em;
     border-bottom: 2px solid #2F2E41;
 }
-
-.input-field .input-file:hover  {
-    border-bottom: 2px solid #13d644ea;
+.input-field .input-file2 {
+    transition: all .5s ease-in-out;
+    margin-bottom: 2em;
+    border-bottom: 2px solid #2F2E41;
 }
+/*.input-field .input-file:hover  {
+    border-bottom: 2px solid #13d644ea;
+}*/
 
 .input-field label {
     font-size: 0.8em;
@@ -148,16 +225,24 @@ form .input-field .input-file-password {
     position: relative;
 }
 
+form .input-field .input-file-password .flex-password {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+form .input-field .input-file-name .flex-name {
+    display: flex;
+    flex-direction: column;
+}
+
 form .input-field .input-file-password span {
     border-left: 1.9px solid #2f2e4148;
     cursor: pointer;
     color: #323144;
     font-weight: 500;
     font-size: 0.9em;
-    position: absolute;
     padding-left: 5px;
-    top: 1.8em;
-    right: 0;
 }
 
 .input-field .input-file-name {
@@ -189,13 +274,20 @@ form .input-field .input-file-password span {
     text-decoration: none;
 }
 
+
+/*.backimg {
+    margin-left: 80%;
+    height: 130px;
+    width: 160px;
+}
+*/
 #footer-phone {
     display: none;
 }
 
 /*Celular*/
 
-@media screen and (max-width: 520px) {
+@media screen and (max-width: 686px) {
 
     body {
         background-color: #05d639be;
