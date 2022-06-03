@@ -33,15 +33,15 @@ function bordaN(){
     let Username = window.document.querySelector('#name')
     let password = window.document.querySelector('#pass')
     if(Username.value == 'Luntala Maria' || Username.value == 'Carla Sole'){
-        borda.style.borderBottom = '2px solid #13d644ea'
+        borda.style.borderColor = '#13d644ea'
     }
 
     else if (Username.value == 0){
-        borda.style.borderBottom = "2px solid #2F2E41"
+        borda.style.borderColor = "#2F2E41"
     }
 
     else{
-        borda.style.borderBottom = '2px solid #ff0062'
+        borda.style.borderColor = '#ff0062'
     }
 }
 

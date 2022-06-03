@@ -182,7 +182,7 @@ footer {
     background-color: #13d644ea;
     border-radius: 100px;
     padding: 2px;
-    width: 1.8em;
+    width: 1.7em;
     top: 23px;
 }
 
@@ -290,7 +290,7 @@ form .input-field .input-file-password span {
 @media screen and (max-width: 686px) {
 
     body {
-        background-color: #05d639be;
+        background-color: #fff;
     }
 
     .left {
@@ -298,19 +298,20 @@ form .input-field .input-file-password span {
     }
 
     .right {
-       
         display: flex;
         flex-direction: column;
         justify-content: center;
         margin: auto;
         width: 100%;
         height: 100%;
-    }
-
+    }       
     .right h1 {
-        margin-top: 1.5em;
         text-align: center;
         width: 100%;
+    }
+
+    .right h1::before {
+        content: '';
     }
 
     .right .line {
@@ -320,6 +321,11 @@ form .input-field .input-file-password span {
     .input-field .input-file {
         display: flex;
         flex-direction: column;
+        background: #8d8d8d2a;
+        padding: 10px;
+        border-radius: 5px 5px 5px 5px;
+        border: 2px solid #2F2E41;
+        box-shadow: 1px 1px 1px #0000003a;
     }
 
     .input-field .input-file:last-child {
