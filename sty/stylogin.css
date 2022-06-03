@@ -237,7 +237,8 @@ form .input-field .input-file-name .flex-name {
 }
 
 form .input-field .input-file-password span {
-    border-left: 1.9px solid #2f2e4148;
+    border-left: 2px solid #2f2e4148;
+    margin-right: 2px;
     cursor: pointer;
     color: #323144;
     font-weight: 500;
@@ -285,12 +286,16 @@ form .input-field .input-file-password span {
     display: none;
 }
 
+
+
+
 /*Celular*/
 
 @media screen and (max-width: 686px) {
 
     body {
-        background-color: #fff;
+        background: url('../img/pexels-rfstudio-3059751.jpg') no-repeat left;
+        background-size: cover;
     }
 
     .left {
@@ -310,8 +315,10 @@ form .input-field .input-file-password span {
         width: 100%;
     }
 
-    .right h1::before {
-        content: '';
+    .right h1 {
+        color: #64f106;
+        text-shadow: 1px 1px 1px #2F2E41;
+        border-radius: 5px;
     }
 
     .right .line {
