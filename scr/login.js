@@ -1,4 +1,13 @@
 
+
+
+function load(){
+    window.document.querySelector('.container').style.display = 'none'
+    window.document.querySelector('#loading').style.display = 'flex'
+}
+
+
+
 /*
     Left
 */

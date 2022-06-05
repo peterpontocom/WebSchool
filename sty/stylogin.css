@@ -15,13 +15,20 @@ body {
 }
 
 .container {
-    position: relative;
+    position: fixed;
     display: flex;
     height: 100%;
     width: 100%;
 }
 
-
+#loading {
+    display: none;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+}
 
 /*left side*/
 
@@ -275,6 +282,16 @@ form .input-field .input-file-password span {
     text-decoration: none;
 }
 
+.forgot {
+    text-decoration: none;
+    color: #3c9203;
+    text-align: center;
+    font-size: 0.7em;
+}
+
+.forgot:hover {
+    text-decoration: underline;
+}
 
 /*.backimg {
     margin-left: 80%;
@@ -291,11 +308,15 @@ form .input-field .input-file-password span {
 
 /*Celular*/
 
-@media screen and (max-width: 686px) {
+@media screen and (max-width: 786px) {
 
     body {
         background: url('../img/pexels-rfstudio-3059751.jpg') no-repeat left;
         background-size: cover;
+    }
+
+    .container {
+        background: linear-gradient(to top, #3e8f0993, #ffffff2d);
     }
 
     .left {
@@ -316,7 +337,7 @@ form .input-field .input-file-password span {
     }
 
     .right h1 {
-        color: #64f106;
+        color: #ffffff;
         text-shadow: 1px 1px 1px #2F2E41;
         border-radius: 5px;
     }
@@ -343,13 +364,18 @@ form .input-field .input-file-password span {
         border-bottom: 2px solid #2F2E41;
     }
 
+    form .input-field .input-file-password span {
+        color: #fff;
+        text-shadow: 1px 1px 1px #0000003a;
+    }
+
    .right form .in button {
        overflow: hidden;
-        margin-top: 1em;
+       margin-top: 1em;
     }
 
     .right form .in button:hover {
-        background: #2F2E41;
+        background: #3a394e;
     }
 
    .right #footer-phone {
