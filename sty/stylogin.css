@@ -255,6 +255,20 @@ form .input-field .input-file-password span {
     padding-left: 5px;
 }
 
+form .input-field .input-file-password span .mostraEsconde {
+    border-left: none;
+    margin-right: 0;
+    cursor: pointer;
+    color: #323144;
+    font-weight: 500;
+    font-size: 0.9em;
+    padding-left: 5px;
+}
+
+form .input-field .input-file-password span img {
+    display: none;
+}
+
 .input-field .input-file-name {
     margin-top: 1.5em;
 }
@@ -376,6 +390,14 @@ form .input-field .input-file-password span {
     form .input-field .input-file-password span {
         color: #fff;
         text-shadow: 1px 1px 1px #0000003a;
+    }
+
+    form .input-field .input-file-password span .mostraEsconde{
+        display: none;
+    }
+
+    form .input-field .input-file-password span img {
+        display: flex;
     }
 
    .right form .in button {
