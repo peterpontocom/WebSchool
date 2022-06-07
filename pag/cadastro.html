@@ -4,9 +4,75 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../sty/cadastrogeral.css">
+    <script src="../scr/cadastro.js"></script>
     <title>Cadastrar-se</title>
 </head>
 <body>
-    
+    <div class="ant">
+        <a href="cadastro.html"><img src="../img/130882.png" alt="Voltar"><span>Voltar</span></a>
+    </div>
+        <ul class="opp">
+            <a href="#" onclick="alunoShow()">
+                <li>
+                    Aluno
+                </li>
+            </a>
+            <a href="#" onclick="professorShow()">
+                <li>
+                    Professor
+                </li>
+            </a>
+            <a href="#" onclick="escolaShow()">
+                <li>
+                    Escola
+                </li>
+            </a>
+        </ul>
+        <form action="#" method="post" class="aluno-form">
+            <div class="dataEmpty">
+                <img src="../img/1144760.png" alt="Foto de perfil" id="profolio">
+                <div class="field-input">
+                    <input type="text" placeholder="Digite o nome do aluno" class="first-input">
+                    <input type="text" placeholder="Digite o nome da escola" class="second-input">
+                </div>
+                <p class="erro" style="opacity: 0;">[ERRO]</p>
+                <a href="#" onclick="wrongAluno()">Seguinte</a>
+            </div>
+            <div class="dataFull">
+
+            </div>
+        </form>
+        <form action="#" method="post" class="professor-form">
+            <div class="dataEmpty">
+                <img src="../img/1144760.png" alt="">
+                <div class="field-input">
+                    <input type="text" placeholder="Digite o nome do Professor" class="first-input-professor">
+                    <input type="text" placeholder="Digite o nome da escola" class="second-input">
+                </div>
+                <p class="erroP" style="opacity: 0;">[ERRO]</p>
+                <a href="#" onclick="wrongProfessor()">Seguinte</a>
+            </div>
+            <div class="dataFull">
+
+            </div>
+        </form>
+        <form action="#" method="post" class="escola-form">
+            <div class="dataEmpty">
+                <img src="../img/1144760.png" alt="" class="profolio-escola">
+                <div class="field-input">
+                    <input type="text" placeholder="Nome da escola" class="first-input-escola" oninput="photoEscola()" list="sc">
+                    <datalist id="sc">
+                        <option value="Árvore da Felicidade">Cólegio</option>
+                        <option value="ITEL">Estado</option>
+                    </datalist>
+                </div>
+                <p class="erroE" style="opacity: 0;">[ERRO]</p>
+                <a href="#" onclick="wrongEscola()">Seguinte</a>
+            </div>
+            <div class="dataFull">
+
+            </div>
+        </form>
 </body>
 </html>

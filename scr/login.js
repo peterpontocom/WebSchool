@@ -41,7 +41,7 @@ function bordaN(){
     let borda = document.querySelector('.input-file')
     let Username = window.document.querySelector('#name')
     let password = window.document.querySelector('#pass')
-    if(Username.value == 'Luntala Maria' || Username.value == 'Carla Sole'){
+    if(Username.value == 'Luntala Maria' || Username.value == 'Carla Sole' || Username == 'Carla Fernandes'){
         borda.style.borderColor = '#13d644ea'
     }
 

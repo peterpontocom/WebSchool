@@ -1,7 +1,9 @@
 /*General Settings*/
 
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200&family=Open+Sans&family=Poppins:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600;1,700&display=swap');
+
 * {
-    font: normal 12pt Arial, Helvetica, sans-serif;
+    font: normal 12pt 'Poppins', Arial, Helvetica, sans-serif;
     margin: 0;
     padding: 0;
     border: none;
@@ -311,12 +313,11 @@ form .input-field .input-file-password span {
 @media screen and (max-width: 786px) {
 
     body {
-        background: url('../img/pexels-rfstudio-3059751.jpg') no-repeat left;
         background-size: cover;
     }
 
     .container {
-        background: linear-gradient(to top, #3e8f0993, #ffffff2d);
+        background: #2F2E41;
     }
 
     .left {
@@ -354,6 +355,14 @@ form .input-field .input-file-password span {
         border-radius: 5px 5px 5px 5px;
         border: 2px solid #2F2E41;
         box-shadow: 1px 1px 1px #0000003a;
+    }
+
+    .input-field input {
+        color: #fff;
+    }
+
+    .input-field input::placeholder {
+        color: #979bcc;
     }
 
     .input-field .input-file:last-child {

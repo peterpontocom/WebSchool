@@ -1,0 +1,179 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200&family=Open+Sans&family=Poppins:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600;1,700&display=swap');
+
+:root {
+    --color0: #30ce84b9;
+    --color1: #13d644ea;
+    --color2: #2F2E41;
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', Arial, sans-serif;
+    border: none;
+    outline: none;
+    transition: all .5s ease-in-out;
+}
+
+body {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    background: var(--color2);
+}
+
+
+.ant {
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 20px;
+}
+
+.ant a {
+    text-decoration: none;
+    color: #61f976;
+}
+
+.ant img {
+    display: none;
+    width: 30px;
+}
+
+ul {
+    width: 100%;
+    margin: auto;
+    display: flex;
+    list-style: none;
+}
+
+ul a {
+    font-weight: normal;
+    margin: auto;
+    padding: 10px;
+    width: 20%;
+    color: #fff;
+    text-align: center;
+    text-decoration: none;
+    background: #13d644ea;
+    border-radius: 5px;
+    transition: .4s;
+    
+}
+
+ul a:hover {
+    background: #05992a;
+    box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.363);
+    padding: 15px;
+}
+
+form {
+    margin: auto 10px;
+    border-radius: 5px;
+    background-color: #ffffffb0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+
+.dataEmpty {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+form img {
+    width: 90px;
+    margin: 0 auto;
+}
+
+form input {
+    margin: 25px auto;
+    padding: 3px;
+    background: none;
+    border-bottom: 2px solid #30ce84;
+}
+
+form input:last-child {
+    margin-left: 20px;
+}
+
+form p {
+    color: rgb(255, 30, 68);
+    margin-bottom: 12px;
+}
+
+form a {
+    color: #fff;
+    text-align: center;
+    text-decoration: none;
+    background: #13D644;
+    border-radius: 5px;
+    padding: 10px;
+    width: 90%;
+}
+
+form a:hover {
+    background: #05992a;
+}
+
+
+.aluno-form {
+    display: none;
+}
+
+.professor-form {
+    display: none;
+}
+
+.escola-form {
+    display: none;
+}
+
+.escola-form input:last-child {
+    margin: 15px auto;
+}
+
+/*mobile*/
+
+@media screen and (max-width: 320px) {
+    ul {
+        flex-direction: column;
+    }
+
+    ul a {
+        width: 100px;
+    }
+
+    ul a:not(:first-child) {
+        margin-top: 10%;
+    }
+
+    ul a:hover {
+        padding: 10px;
+    }
+    .field-input {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    form input:last-child {
+        margin: auto;
+    }
+
+    .ant img {
+        display: flex;
+    }
+
+    .ant span {
+        display: none;
+    }
+}
